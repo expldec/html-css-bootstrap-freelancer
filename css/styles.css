@@ -25,3 +25,15 @@ header {
 #contact {
     color: var(--fl-darkblue-color);
 }
+
+footer {
+    color: white;
+}
+
+#footer-top {
+    background-color: var(--fl-lightblue-color);
+}
+
+#footer-bottom {
+    background-color: var(--fl-darkblue-color);
+}
