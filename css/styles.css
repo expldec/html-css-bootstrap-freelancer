@@ -97,14 +97,25 @@ footer {
 
 /* BUTTONS */
 
+.ms_button-header {
+    color: grey;
+    border-color: white;
+}
+
 .ms_button-outline-primary {
     color: white;
     background-color: var(--fl-green-color);
     border-color: white;
 }
 
+.ms_button-header:focus{
+    box-shadow: none;
+    color: grey;
+}
+
 .ms_button-outline-primary:focus {
     box-shadow: none;
+    color: white;
 }
 
 .ms_img-wrapper {
@@ -131,4 +142,9 @@ footer {
     text-decoration: none;
     text-transform: uppercase;
     color: white;
+}
+
+/* ABOUT */
+.ms_column-wrapper {
+    margin: 1.5rem 0;
 }
