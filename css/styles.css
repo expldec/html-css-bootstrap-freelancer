@@ -1,12 +1,14 @@
 :root {
     --fl-darkblue-color: #2c3e50;
     --fl-green-color: #1abc9c;
+    --fl-green-color-transparent: rgba(26,188,156,0.5);
     --fl-lightblue-color: #3a546d;
     --fl-darkgrey-color: #333333;
 }
 
 
 /* COMMON */
+   /* SECTION COLORS AND PADDING */
 header {
     background-color: var(--fl-darkblue-color);
     color: white;
@@ -17,50 +19,6 @@ header {
     padding: 3rem;
 }
 
-.ms_star-spacer-bw {
-    background-color: var(--fl-darkblue-color);
-    color: var(--fl-darkblue-color);
-}
-
-.ms_star-spacer-bw::after {
-    background-color: white;
-}
-
-.ms_star-spacer-color {
-    background-color: white;
-    color: white;
-}
-
-.ms_star-spacer-color::after {
-    background-color: var(--fl-green-color);
-}
-
-.ms_star-spacer-bw, .ms_star-spacer-color {
-    position: relative;
-    height: 3px;
-    width: 100%;
-    font-size: 2rem;
-    /* TEST */
-    margin: .5em 0;
-}
-
-.ms_star-spacer-bw::after, .ms_star-spacer-color::after{
-    content: '\f005';
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 2em;
-    height: 1em;
-    top:50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}
-
-
-/* JUMBOTRON */
 #jumbotron,
 #about {
     background-color: var(--fl-green-color);
@@ -87,4 +45,90 @@ footer {
 #footer-bottom {
     padding: 1rem 0 1rem;
     background-color: var(--fl-darkblue-color);
+}
+
+/* SPACER BAR */
+.ms_star-spacer-bw {
+    background-color: var(--fl-darkblue-color);
+    color: var(--fl-darkblue-color);
+}
+
+.ms_star-spacer-bw::after {
+    background-color: white;
+}
+
+.ms_star-spacer-color {
+    background-color: white;
+    color: white;
+}
+
+.ms_star-spacer-color::after {
+    background-color: var(--fl-green-color);
+}
+
+.ms_star-spacer-bw, .ms_star-spacer-color {
+    position: relative;
+    height: 3px;
+    width: 100%;
+    font-size: 1.5rem;
+    margin: .6em 0;
+}
+
+.ms_star-spacer-bw::after, .ms_star-spacer-color::after{
+    content: '\f005';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2em;
+    height: 1em;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+@media screen and (min-width: 768px) {
+    .ms_star-spacer-bw, .ms_star-spacer-color {
+        font-size: 2rem;
+    }
+}
+
+/* BUTTONS */
+
+.ms_button-outline-primary {
+    color: white;
+    background-color: var(--fl-green-color);
+    border-color: white;
+}
+
+.ms_button-outline-primary:focus {
+    box-shadow: none;
+}
+
+.ms_img-wrapper {
+    padding: 2rem 0;
+}
+
+
+/* HEADER */
+.ms_brand {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.ms_nav {
+    list-style: none;
+}
+
+.ms_nav li {
+    display: inline-block;
+    margin-left: 1rem;
+}
+
+.ms_nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
 }
