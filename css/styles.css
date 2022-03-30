@@ -1,7 +1,7 @@
 :root {
     --fl-darkblue-color: #2c3e50;
     --fl-green-color: #1abc9c;
-    --fl-green-color-transparent: rgba(26,188,156,0.5);
+    --fl-green-color-transparent: rgba(26,188,156,0.8);
     --fl-lightblue-color: #3a546d;
     --fl-darkgrey-color: #333333;
 }
@@ -108,9 +108,14 @@ footer {
     border-color: white;
 }
 
-.ms_button-header:focus{
+.ms_button-header:focus {
     box-shadow: none;
     color: grey;
+}
+
+.ms_button-header:hover {
+    color: grey;
+    transform: scale(1.2);
 }
 
 .ms_button-primary {
@@ -123,6 +128,11 @@ footer {
     color: white;
 }
 
+.ms_button-primary:hover {
+    color: white;
+    transform: scale(1.2);
+}
+
 .ms_button-outline-primary {
     color: white;
     background-color: var(--fl-green-color);
@@ -131,6 +141,11 @@ footer {
 .ms_button-outline-primary:focus {
     box-shadow: none;
     color: white;
+}
+
+.ms_button-outline-primary:hover {
+    color: white;
+    transform: scale(1.2);
 }
 
 .ms_img-wrapper {
@@ -157,6 +172,38 @@ footer {
     text-decoration: none;
     text-transform: uppercase;
     color: white;
+}
+
+.ms_nav a:hover {
+    text-decoration: underline;
+}
+
+/* PORTFOLIO */
+#portfolio-pics .ms_thumbnail {
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+/* #portfolio-pics img:hover {
+    transform: scale(1.5);
+} */
+
+#portfolio-pics .ms_thumbnail:hover::before {
+    content: '\f067';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 5rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--fl-green-color-transparent);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
 }
 
 /* ABOUT */
@@ -198,4 +245,14 @@ footer li {
     border-radius: 50%;
     border: 2px solid white;
     font-size: 1.2rem;
+}
+
+footer a {
+    color: var(--fl-green-color);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--fl-green-color);
+    text-decoration: underline;
 }
