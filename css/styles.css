@@ -17,6 +17,50 @@ header {
     padding: 3rem;
 }
 
+.ms_star-spacer-bw {
+    background-color: var(--fl-darkblue-color);
+    color: var(--fl-darkblue-color);
+}
+
+.ms_star-spacer-bw::after {
+    background-color: white;
+}
+
+.ms_star-spacer-color {
+    background-color: white;
+    color: white;
+}
+
+.ms_star-spacer-color::after {
+    background-color: var(--fl-green-color);
+}
+
+.ms_star-spacer-bw, .ms_star-spacer-color {
+    position: relative;
+    height: 3px;
+    width: 100%;
+    font-size: 2rem;
+    /* TEST */
+    margin: .5em 0;
+}
+
+.ms_star-spacer-bw::after, .ms_star-spacer-color::after{
+    content: '\f005';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2em;
+    height: 1em;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+/* JUMBOTRON */
 #jumbotron,
 #about {
     background-color: var(--fl-green-color);
