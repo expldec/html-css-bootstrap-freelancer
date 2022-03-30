@@ -47,6 +47,12 @@ footer {
     background-color: var(--fl-darkblue-color);
 }
 
+.ms_reduced-width {
+    width: 66%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
 /* SPACER BAR */
 .ms_star-spacer-bw {
     background-color: var(--fl-darkblue-color);
@@ -102,17 +108,26 @@ footer {
     border-color: white;
 }
 
-.ms_button-outline-primary {
-    color: white;
-    background-color: var(--fl-green-color);
-    border-color: white;
-}
-
 .ms_button-header:focus{
     box-shadow: none;
     color: grey;
 }
 
+.ms_button-primary {
+    color: white;
+    background-color: var(--fl-green-color);
+    border-color: var(--fl-green-color);
+}
+.ms_button-primary:focus {
+    box-shadow: none;
+    color: white;
+}
+
+.ms_button-outline-primary {
+    color: white;
+    background-color: var(--fl-green-color);
+    border-color: white;
+}
 .ms_button-outline-primary:focus {
     box-shadow: none;
     color: white;
@@ -147,4 +162,40 @@ footer {
 /* ABOUT */
 .ms_column-wrapper {
     margin: 1.5rem 0;
+}
+
+/* CONTACT */
+#contact-form .form-control {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+#contact-form .form-control:focus {
+    box-shadow: none;
+}
+
+/* FOOTER */
+
+footer h4 {
+    text-transform: uppercase;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+footer li {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    margin: 0 0.5rem;
+    border-radius: 50%;
+    border: 2px solid white;
+    font-size: 1.2rem;
 }

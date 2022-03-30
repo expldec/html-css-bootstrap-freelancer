@@ -16,7 +16,7 @@
                 <div class="col-9 col-md-4" id="header-left">
                     <span class="ms_brand">START BOOTSTRAP</span>
                 </div>
-                <div class="d-none col-md-8 text-end" id="header-right">
+                <div class="d-none d-md-block col-md-8 text-end" id="header-right">
                     <nav>
                         <ul class="ms_nav">
                             <li><a href="portfolio">Portfolio</a></li>
@@ -25,7 +25,7 @@
                         </ul>
                     </nav>
                 </div>
-                <div class="d-block-md col-3 text-end">
+                <div class="d-md-none col-3 text-end">
                     <a class="btn ms_button-header" href="#" role="button">
                         <i class="fas fa-bars"></i>
                     </a>
@@ -94,55 +94,73 @@
     
         </section>
         <section class="ms_section" id="about">
-            <div class="container text-center">
-                <div class="row justify-content-center">
-                    <div class="col">
-                        <h2>ABOUT</h2>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-6">
-                        <div class="ms_star-spacer-color"></div>
-                    </div>
-                </div>
-                <div class="ms_column-wrapper">
-                    <div class="row justify-content-center g-3">
-                        <div class="col-12 col-md-6">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores voluptate impedit quis reiciendis obcaecati perferendis ea porro aspernatur optio, magni recusandae maxime quam quasi nesciunt. Eaque saepe fuga dolor impedit.
-                        </div>
-                        <div class="col-12 col-md-6">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores voluptate impedit quis reiciendis obcaecati perferendis ea porro aspernatur optio, magni recusandae maxime quam quasi nesciunt. Eaque saepe fuga dolor impedit.
+            <div class="ms_reduced-width">
+                <div class="container-fluid text-center">
+                    <div class="row justify-content-center">
+                        <div class="col">
+                            <h2>ABOUT</h2>
                         </div>
                     </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col">
-                        <a class="btn ms_button-outline-primary" href="#" role="button">
-                            <i class="fas fa-download"></i> DOWNLOAD
-                        </a>
+                    <div class="row justify-content-center">
+                        <div class="col-6">
+                            <div class="ms_star-spacer-color"></div>
+                        </div>
                     </div>
-                </div>
-            </div>        
+                    <div class="ms_column-wrapper">
+                        <div class="row justify-content-center g-3">
+                            <div class="col-12 col-md-6">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores voluptate impedit quis reiciendis obcaecati perferendis ea porro aspernatur optio, magni recusandae maxime quam quasi nesciunt. Eaque saepe fuga dolor impedit.
+                            </div>
+                            <div class="col-12 col-md-6">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores voluptate impedit quis reiciendis obcaecati perferendis ea porro aspernatur optio, magni recusandae maxime quam quasi nesciunt. Eaque saepe fuga dolor impedit.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col">
+                            <a class="btn ms_button-outline-primary" href="#" role="button">
+                                <i class="fas fa-download"></i> DOWNLOAD
+                            </a>
+                        </div>
+                    </div>
+                </div>  
+            </div>      
         </section>
         <section class="ms_section" id="contact">
-            <div class="container text-center">
-                <div class="row justify-content-center">
-                    <div class="col">
-                        <h2>CONTACT ME</h2>
+            <div class="ms_reduced-width">
+                <div class="container-fluid text-center">
+                    <div class="row justify-content-center">
+                        <div class="col">
+                            <h2>CONTACT ME</h2>
+                        </div>
                     </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-6">
-                        <div class="ms_star-spacer-bw"></div>
+                    <div class="row justify-content-center">
+                        <div class="col-6">
+                            <div class="ms_star-spacer-bw"></div>
+                        </div>
                     </div>
-                </div>
-                <div class="row justify-content-center g-3">
-                    <div class="col-12">
-                        <div>Name</div>
-                        <div>Email</div>
-                        <div>Phone Number</div>
-                        <div>Message</div>
-                        <button>Send message</button>
+                    <div class="row justify-content-start text-start g-3">
+                        <div class="col-12">
+                            <form id="contact-form">
+                                <div class="mb-3">
+                                  <label for="input-name" class="form-label sr-only">Name</label>
+                                  <input type="text" class="form-control" id="input-name" placeholder="Name">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="input-email" class="form-label sr-only">Email address</label>
+                                    <input type="email" class="form-control" id="input-email" placeholder="Email address">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="input-phone" class="form-label sr-only">Phone Number</label>
+                                    <input type="tel" class="form-control" id="input-phone" placeholder="Phone Number">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="input-message" class="form-label sr-only">Example textarea</label>
+                                    <textarea class="form-control" id="input-message" rows="3" placeholder="Message"></textarea>
+                                </div>
+                                <button type="submit" class="btn ms_button-primary">Send</button>
+                              </form>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -159,7 +177,14 @@
                     </div>
                     <div class="col-12 col-md-4">
                         <h4>Around the web</h4>
-                        <p>TW FB LI GH</p>
+                        <div class="ms_social-links">
+                            <ul>
+                                <li><i class="fab fa-twitter"></i></li>
+                                <li><i class="fab fa-facebook-f"></i></li>
+                                <li><i class="fab fa-github"></i></li>
+                                <li><i class="fab fa-linkedin-in"></i></li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="col-12 col-md-4">
                         <h4>About Freelancer</h4>
@@ -168,10 +193,12 @@
                 </div>
             </div>
         </div>
-        <div id="footer-bottom" class="container-fluid text-center">
-            <div class="row justify-content-center">
-                <div class="col">
-                    Copyright Your website 2019
+        <div id="footer-bottom">
+            <div class="container-fluid text-center">
+                <div class="row justify-content-center">
+                    <div class="col">
+                        Copyright Your website 2019
+                    </div>
                 </div>
             </div>
         </div>
