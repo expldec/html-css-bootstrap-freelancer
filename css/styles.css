@@ -5,9 +5,16 @@
     --fl-darkgrey-color: #333333;
 }
 
+
+/* COMMON */
 header {
     background-color: var(--fl-darkblue-color);
     color: white;
+    padding: 2rem 0;
+}
+
+.ms_section {
+    padding: 3rem;
 }
 
 #jumbotron,
@@ -28,12 +35,12 @@ header {
 
 footer {
     color: white;
-}
-
-#footer-top {
+    padding: 2rem 0 0;
     background-color: var(--fl-lightblue-color);
 }
 
+
 #footer-bottom {
+    padding: 1rem 0 1rem;
     background-color: var(--fl-darkblue-color);
 }
